@@ -44,6 +44,7 @@ const FilePicker = () => {
     try {
       const results = await DocumentPicker.pick({
         type: [DocumentPicker.types.images],
+        allowMultiSelection: true,
       });
       console.log(results);
       setMultipleFile(results);
